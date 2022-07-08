@@ -1,0 +1,10 @@
+  162  clear
+  163  ./p1
+  164  scp . gq001@uco.cs.edu:/home/gq/gq001
+  165  scp . gq001@cs.uco.edu:/home/gq/gq001
+  166  scp -r ./ gq001@cs.uco.edu:/home/gq/gq001
+  167  ls
+  168  scp ./* gq001@cs.uco.edu:/home/gq/gq001
+  169  history | head -n 10 
+  170  history | tail -n 10 
+  171  history | tail -n 10 > code.txt

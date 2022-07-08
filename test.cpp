@@ -7,7 +7,7 @@
 using namespace std;
 
 bool isValidPlayLocation(int loc);
-void printBoard(array<array<char, BOARD_SIZE>, BOARD_SIZE> &board);
+void displayBoard(array<array<char, BOARD_SIZE>, BOARD_SIZE> &board);
 void playInLocation(int, array<array<char, BOARD_SIZE>, BOARD_SIZE> &board, char tag);
 bool isWinningMove(array<array<char, BOARD_SIZE>, BOARD_SIZE> &board);
 bool isBoardFull(array<array<char, BOARD_SIZE>, BOARD_SIZE> &board);
@@ -88,7 +88,7 @@ bool isValidPlayLocation(int location)
   return (location < 0 || location > 8) ? false : true;
 }
 
-void printBoard(array<array<char, BOARD_SIZE>, BOARD_SIZE> &board)
+void displayBoard(array<array<char, BOARD_SIZE>, BOARD_SIZE> &board)
 {
   cout << "+-+-+-+" << endl;
   for (auto const &row : board)
